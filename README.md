@@ -1,5 +1,7 @@
 # OpenIMIS Claim AI
 
+### This is an experimental prject and using scikitlearn
+
 An AI-powered claim processing system for OpenIMIS (Open Insurance Management Information System).
 
 ## Overview

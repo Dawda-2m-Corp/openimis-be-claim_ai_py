@@ -9,8 +9,7 @@ from sklearn.ensemble import RandomForestClassifier, IsolationForest
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import OneClassSVM
 from sklearn.preprocessing import StandardScaler, LabelEncoder
-from sklearn.model_selection import train_test_split, cross_val_score
-from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score
+from sklearn.metrics import roc_auc_score
 from sklearn.feature_extraction.text import TfidfVectorizer
 import joblib
 import logging
@@ -117,7 +116,7 @@ class ClaimAIModel:
         text_features = ["claim_description", "diagnosis_notes"]
 
         X_numerical = data[numerical_features].values
-        X_categorical = data[categorical_features].values
+        # X_categorical = data[categorical_features].values
 
         # Encode categorical variables
         if for_training:
